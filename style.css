@@ -1,0 +1,51 @@
+body{
+	background-color:white;
+	color:#555;
+	font-size:16px;
+	line-height:1.6em;
+	margin:0;
+}
+
+
+
+
+
+
+section#register-form
+{
+	height: 550px;
+	color:black;
+	background-color: grey;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+    width: 50%;
+
+}
+
+form
+{
+    padding: 2em;
+    margin: 2em;
+}
+.grid-item
+{
+    padding: 0.50em;
+}
+
+.grid-container 
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+.textarea
+{
+    align-items: center;
+    margin: 1.1em;
+    padding: auto;
+    display:flex;
+}
+
+
