@@ -8,69 +8,105 @@
     <title>Paradigm</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
-        *{
+
+        * {
             padding: 0;
             margin: 0;
         }
+
         body {
             font-family: 'Roboto', sans-serif;
         }
-        .nav-container{
-            display:flex;
+
+        .nav-container {
+            display: flex;
             flex-direction: column;
             background-color: #333030;
         }
-        h1{
-            text-align:center;
+
+        h1 {
+            text-align: center;
         }
-        hr{
+
+        hr {
             border-top: 1.5px solid #333030;
-            margin-top:-8px;
-            width:0px;
+            margin-top: -8px;
+            width: 0px;
             align-self: center;
             transition: 0.5s;
         }
-        .nav-heading:hover + hr{
+
+        .nav-heading:hover+hr {
             border-top: 1.5px solid antiquewhite;
-            width:130px;
+            width: 130px;
         }
-        .nav-heading{
+
+        .nav-heading {
             cursor: pointer;
-            color:antiquewhite;
+            color: antiquewhite;
             padding: 10px;
         }
+
         ul {
             margin-top: 7px;
             list-style-type: none;
-            text-align:center;
-        }
-        li {
-            display:inline-block;
-            padding:5px 10px 5px 10px;
-            border-radius: 3px 15px 0px 0px;
-        }
-        #current-page{
-            background-color: white;
-        }
-        #current-page > a{
-            color:black;
-        }
-        li > a {
-            text-decoration: none;
-            font-size: 20px;
-            color:antiquewhite;
-        }
-        .landing-container>h1{
-            margin-top:30vh;
-        }
-        .landing-container>h2{
             text-align: center;
         }
-        img{
-            margin-top:-200px;
+
+        li {
+            display: inline-block;
+            padding: 5px 10px 5px 10px;
+            border-radius: 3px 15px 0px 0px;
+            transition: 0.6s;
         }
-        .img-explore{
-            float:right;
+
+        li>a {
+            text-decoration: none;
+            font-size: 20px;
+            color: antiquewhite;
+        }
+
+        li:hover {
+            background-color: white;
+            transition: 0.6s;
+        }
+
+        li:hover>a {
+            color: #333030;
+        }
+
+        #current-page {
+            background-color: white;
+        }
+
+        #current-page>a {
+            color: #333030;
+        }
+
+        .body-container>h1 {
+            color: white;
+            background-color: #333030;
+            padding: 10px;
+            border-radius: 3px 20px 3px 20px;
+        }
+
+        .body-container>h2 {
+            text-align: center;
+        }
+        .body-container{
+            margin-top: 30vh;
+            margin-left: 35vw;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        img {
+            margin-top: -200px;
+        }
+
+        .img-explore {
+            float: right;
         }
     </style>
 
@@ -89,10 +125,12 @@
         </ul>
     </div>
     <div class="landing-container">
-        <h1>Learn To write HTML</h1>
-        <h2>with to the point tutorials</h2>
-        <img class="img-learn" src="./assets/learn.svg" height="500" width="500"alt="learn.svg">
-        <img class="img-explore" src="./assets/explore.svg" height="500" width="500"alt="learn.svg">
+        <div class="body-container">
+            <h1>Learn To write HTML</h1>
+            <h2>with to the point tutorials</h2>
+        </div>
+        <img class="img-learn" src="./assets/learn.svg" height="500" width="500" alt="learn.svg">
+        <img class="img-explore" src="./assets/explore.svg" height="500" width="500" alt="learn.svg">
     </div>
 </body>
 
