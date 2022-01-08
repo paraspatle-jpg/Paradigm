@@ -80,6 +80,7 @@ section#login-form
     background-color:#333030;
     color: antiquewhite;
     height: 50px;
+    padding-bottom: 34px;
 }
 .footer-container>h3{
     text-align: center;
