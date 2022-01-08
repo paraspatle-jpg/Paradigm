@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paradigm | Contact Us</title>
-    <link rel="stylesheet" href="./styles/navbar.css"/>
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/contact-us.css" />
 </head>
+
 <body>
     <div class="nav-container">
         <h1 class="nav-heading">Paradigm</h1>
         <hr>
         <ul>
-            <li><a href="">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="">Login</a></li>
             <li><a href="">Signup</a></li>
-            <li id="current-page"><a href="">Contact Us</a></li>
+            <li id="current-page"><a href="contact-us.html">Contact Us</a></li>
             <li><a href="">About Us</a></li>
         </ul>
     </div>
     <div class="contact-container">
-        
+        <form>
+            <label for="email">Your Email :</label>
+            <input class="text" type="email" /><br>
+            <label for="query-type">Select type of your question :</label>
+            <span><input type="radio"> Complaint</span>
+            <span><input type="radio"> Query</span>
+            <span><input type="radio"> Contribution</span><br>
+            <label for="query">Your Question :</label>
+            <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea><br>
+            <span class="submit"><a href="">Submit</a></span>
+        </form>
+        <img src="./assets/contact-us.svg" height="500" width="500" alt="contact-us.svg">
+    </div>
+    <div class="footer-container">
+        <h3>All rights reserved | Paradigm</h3>
     </div>
 </body>
+
 </html>
