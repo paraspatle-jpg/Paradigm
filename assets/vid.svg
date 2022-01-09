@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   sodipodi:docname="cyb-video.svg"
+   inkscape:export-filename="C:\inetpub\wwwroot\emdisa\arte\video.png"
+   viewBox="0 0 180 120"
+   inkscape:export-xdpi="90"
+   version="1.1"
+   inkscape:export-ydpi="90"
+   inkscape:version="0.92.1 r15371"
+   width="192"
+   height="128">
+  <defs
+     id="defs4">
+    <filter
+       id="filter3819"
+       inkscape:menu="Shadows and Glows"
+       inkscape:menu-tooltip="Glow of object's own color at the edges"
+       inkscape:label="Glow"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur3821"
+         stdDeviation="2.4097599999999999"
+         result="result91" />
+      <feComposite
+         id="feComposite3823"
+         operator="over"
+         in2="result91"
+         in="SourceGraphic" />
+    </filter>
+    <filter
+       id="filter3819-1"
+       inkscape:menu="Shadows and Glows"
+       inkscape:menu-tooltip="Glow of object's own color at the edges"
+       inkscape:label="Glow"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur3821-7"
+         stdDeviation="2.4097599999999999"
+         result="result91" />
+      <feComposite
+         id="feComposite3823-4"
+         operator="over"
+         in2="result91"
+         in="SourceGraphic" />
+    </filter>
+    <filter
+       id="filter3852"
+       inkscape:menu="Shadows and Glows"
+       inkscape:menu-tooltip="Glow of object's own color at the edges"
+       inkscape:label="Glow"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur3854"
+         stdDeviation="5"
+         result="result91" />
+      <feComposite
+         id="feComposite3856"
+         operator="over"
+         in2="result91"
+         in="SourceGraphic" />
+    </filter>
+    <linearGradient
+       id="linearGradient3866"
+       y2="1050.7"
+       gradientUnits="userSpaceOnUse"
+       x2="79.122002"
+       y1="1036.7"
+       x1="79.122002"
+       inkscape:collect="always">
+      <stop
+         id="stop3862"
+         style="stop-color:#e3e3e3"
+         offset="0" />
+      <stop
+         id="stop3864"
+         style="stop-color:#c9c9c9"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3882"
+       y2="1042.3"
+       gradientUnits="userSpaceOnUse"
+       x2="155.57001"
+       y1="1042.3"
+       x1="22.289"
+       inkscape:collect="always">
+      <stop
+         id="stop3878"
+         style="stop-color:#a90000"
+         offset="0" />
+      <stop
+         id="stop3886"
+         style="stop-color:#a90000;stop-opacity:.74902"
+         offset=".47646" />
+      <stop
+         id="stop3884"
+         style="stop-color:#a90000;stop-opacity:.49804"
+         offset=".5" />
+      <stop
+         id="stop3880"
+         style="stop-color:#a90000;stop-opacity:.54978"
+         offset="1" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     inkscape:window-y="-8"
+     pagecolor="#ffffff"
+     inkscape:window-height="1017"
+     inkscape:window-maximized="1"
+     inkscape:zoom="2.2958334"
+     inkscape:window-x="-8"
+     showgrid="false"
+     borderopacity="1.0"
+     inkscape:current-layer="layer1"
+     inkscape:cx="31.990764"
+     inkscape:cy="19.005145"
+     inkscape:window-width="1920"
+     inkscape:pageopacity="0.0"
+     inkscape:document-units="px" />
+  <g
+     id="layer1"
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     transform="translate(0,-932.36)">
+    <rect
+       id="rect3888"
+       style="opacity:0.80086999;fill:#000000"
+       rx="4"
+       ry="4"
+       height="120"
+       width="180"
+       y="932.35999"
+       x="0" />
+    <path
+       id="rect3809"
+       sodipodi:nodetypes="sscasss"
+       style="opacity:0.23377003;fill:#ffffff"
+       inkscape:connector-curvature="0"
+       d="m 4,932.36 h 172 c 2.216,0 4,1.784 4,4 0,0 -76.553,18.838 -109.1,39.797 -28.358,18.26 -70.9,74.44 -70.9,72.24 v -112.04 c 0,-2.216 1.784,-4 4,-4 z" />
+    <path
+       id="rect3007"
+       sodipodi:nodetypes="cccccsssssssss"
+       style="fill:#9b9b9b;filter:url(#filter3852)"
+       inkscape:connector-curvature="0"
+       d="m 6.0312,936.5 0.25,99.906 167.78,-0.4 -0.47,-99.75 z M 4,932.36 h 172 c 2.216,0 4,1.784 4,4 v 112 c 0,2.216 -1.784,4 -4,4 H 4 c -2.216,0 -4,-1.784 -4,-4 V 936.32 c 0,-2.216 1.784,-4 4,-4 z" />
+    <path
+       id="path3805"
+       style="fill:#b7b7b7;filter:url(#filter3819)"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="-5.182897"
+       d="m 74.451,962.18 31.097,22.185 -31.097,22.185 z" />
+    <rect
+       id="rect3858"
+       style="opacity:0.80086999;fill:url(#linearGradient3866)"
+       height="14.374"
+       width="167.7"
+       y="1035.6"
+       x="6.3811002" />
+    <path
+       id="path3805-0"
+       style="fill:#393939;filter:url(#filter3819-1)"
+       d="m 26.266,1019.3 31.097,22.185 -31.097,22.185 z"
+       inkscape:transform-center-x="-0.85742762"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.16543,0,0,0.14511,7.9209,891.38)" />
+    <rect
+       id="rect3868"
+       style="opacity:0.80086999;fill:#333333"
+       height="7.0839"
+       width="6.4678998"
+       y="1039"
+       x="159.85001" />
+    <rect
+       id="rect3872"
+       style="opacity:0.80086999;fill:url(#linearGradient3882)"
+       height="2.9742999"
+       width="133.28"
+       y="1040.9"
+       x="22.289" />
+    <circle
+       id="path3888"
+       style="fill:#323232"
+       transform="translate(0.308,931.75)"
+       cx="86.084793"
+       cy="110.60613"
+       r="3.2339549" />
+  </g>
+  <metadata
+     id="metadata33">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title></dc:title>
+        <dc:date>2012-10-19T13:44:29</dc:date>
+        <dc:description>Reproducir video</dc:description>
+        <dc:source>https://openclipart.org/detail/172827/video-by-juliocesarfx-172827</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>juliocesarfx</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>pantalle</rdf:li>
+            <rdf:li>play</rdf:li>
+            <rdf:li>reproducir</rdf:li>
+            <rdf:li>video</rdf:li>
+            <rdf:li>youtube</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
