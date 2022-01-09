@@ -22,9 +22,10 @@ span>a:hover{
     margin-top:66px;
     background-color:#333030;
     color: antiquewhite;
-    height: 40px;
+    height: 60px;
 }
 .footer-container>h3{
     text-align: center;
     margin-top:23px;
+    padding-top: 20px;
 }

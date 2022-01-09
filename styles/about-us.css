@@ -58,9 +58,10 @@ span>a:hover{
 .footer-container{
     background-color:#333030;
     color: antiquewhite;
-    height: 50px;
+    height: 60px;
 }
 .footer-container>h3{
     text-align: center;
+    padding-top: 18px;
     margin-top:23px;
 }
