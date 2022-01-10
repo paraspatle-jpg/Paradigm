@@ -5,12 +5,12 @@
     font-size: 20px;
 }
 img{
-    margin-top:-30px;
+    margin-top:-20px;
 }
 form{
-    margin-top:40px;
+    margin-top:20px;
     width:23vw;
-    height:50vh;
+    height:60vh;
     padding: 25px;
     background-color:#333030;
     color:white;
@@ -29,8 +29,6 @@ form{
 }
 textarea{
     resize:none;
-    width:330px;
-    height:25px;
     border:1px solid white;
     font-size:18px;
     padding: 5px;
