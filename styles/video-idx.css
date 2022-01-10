@@ -4,7 +4,7 @@
     padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-left: -200px;
+    margin-left: -100px;
 }
 .box2{
     text-align: right;
@@ -34,7 +34,7 @@ span>a:hover{
     margin-top:66px;
     background-color:#333030;
     color: antiquewhite;
-    height: 60px;
+    height: 61px;
 }
 .footer-container>h3{
     text-align: center;
