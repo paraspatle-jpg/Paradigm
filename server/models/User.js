@@ -11,5 +11,7 @@ const UserSchema = new mongoose.Schema({
         required: true,
         minLength: 1,
     },
-    blog: []
+    blog: [Number]
 })
+
+module.exports = User = mongoose.model('user',UserSchema);

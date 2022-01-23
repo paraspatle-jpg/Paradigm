@@ -4,13 +4,18 @@
   "description": "server for paradigm",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./server.js",
+    "dev": "nodemon ./server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^12.0.3",
     "express": "^4.17.2",
     "mongoose": "^6.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
