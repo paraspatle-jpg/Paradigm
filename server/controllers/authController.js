@@ -5,8 +5,8 @@ module.exports.login = (req , res) =>{
 
     User.findOne({email,password})
         .then((user) =>{
-            if(!user) return res.send({message:"User not found with these credentials"})
-            res.send({
+            if(!user) return res.status(404).send({message:"User not found with these credentials"})
+            res.status(200).send({
                 userId:_id,
                 username:user.username,
                 email:user.email,

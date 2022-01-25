@@ -2,12 +2,21 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
+const authRoutes = require('./routes/auth');
+
 const app = express();
 app.use(express.json());
 app.use(cors());
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
+    res.header("Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+    next();
+})
 
+app.use("/",authRoutes);
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 const url = "mongodb+srv://averagestudent:rparas1203@cluster0.otxqv.mongodb.net/paradigm?retryWrites=true&w=majority";
 
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
