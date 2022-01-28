@@ -10,7 +10,7 @@ img{
 form{
     margin-top:70px;
     width:23vw;
-    height:45vh;
+    height:50vh;
     padding: 25px;
     background-color:#333030;
     color:white;
@@ -48,6 +48,7 @@ span>a{
     padding: 10px 40px 10px 40px;
     border-radius:3px 20px 3px 20px;
     transition:0.6s;
+    cursor: pointer;
 }
 span>a:hover{
     background-color: #ff6584;

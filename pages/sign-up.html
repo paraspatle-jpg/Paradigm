@@ -31,20 +31,20 @@
 	<div class="contact-container">
 		<form>
 			<label for="email">Your Name :</label>
-			<input class="text" type="name" /><br>
+			<input id="username" class="text" type="name" placeholder="Enter Your Name"/><br>
 			<label for="email">Your Email :</label>
-			<input class="text" type="email" /><br>
+			<input id="emailId" class="text" type="email" placeholder="Enter Your Email"/><br>
 			<label for="query">Create Password :</label>
-			<input class="text" type="" /><br><br>
-			<span class="submit"><a href="welcome.html">Submit</a></span>
+			<input id="password"class="text" type="" placeholder="Enter Your Password"/><br><br>
+			<p id="warning" style="color: #fff; font-size: 12px;"></p>
+			<span class="submit"><a id="submitbtn">Submit</a></span>
 		</form>
 		<img src="../assets/sign-in.svg" height="500" width="500" alt="login.svg">
 	</div>
 	<div class="footer-container">
 		<h3>All rights reserved | Paradigm</h3>
 	</div>
-
-
+	<script type="text/javascript" src="../scripts/login.js"></script>
 </body>
 
 </html>
