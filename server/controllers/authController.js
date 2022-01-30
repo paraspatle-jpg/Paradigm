@@ -20,11 +20,11 @@ module.exports.signup = (req, res) => {
             if (user) return res.status(400).json({ message: "User already exists with this mail" });
             const newUser = new User({ username, email, password });
             newUser.save()
-                .then((newuser) => {
+                .then((user) => {
                     res.status(200).json({
-                        userId: newuser._id,
-                        username: newuser.username,
-                        email: newuser.email
+                        userId: user._id,
+                        username: user.username,
+                        email: user.email
                     })
 
                 })
