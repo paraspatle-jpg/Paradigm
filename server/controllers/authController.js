@@ -15,7 +15,6 @@ module.exports.login = (req, res) => {
 
 module.exports.signup = (req, res) => {
     const { username, email, password } = req.body;
-    if(!username || !password|| !email) return res.status(402).json({msg: "Invalid username or password"})
     User.findOne({ email })
         .then((user) => {
             if (user) return res.status(400).json({ message: "User already exists with this mail" });
