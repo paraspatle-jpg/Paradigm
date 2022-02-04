@@ -5,8 +5,8 @@ module.exports.login = (req, res) => {
     User.findOne({ email, password })
         .then((user) => {
             if (!user) return res.status(404).json({ message: "User not found with these credentials" })
-            res.status(200).json({
-                userId: _id,
+            res.status(200).send({
+                userId: user._id,
                 username: user.username,
                 email: user.email,
             })
@@ -15,13 +15,14 @@ module.exports.login = (req, res) => {
 
 module.exports.signup = (req, res) => {
     const { username, email, password } = req.body;
+    if(!username || !password|| !email) return res.status(402).json({msg: "Invalid username or password"})
     User.findOne({ email })
         .then((user) => {
             if (user) return res.status(400).json({ message: "User already exists with this mail" });
             const newUser = new User({ username, email, password });
             newUser.save()
                 .then((user) => {
-                    res.status(200).json({
+                    res.status(200).send({
                         userId: user._id,
                         username: user.username,
                         email: user.email

@@ -4,6 +4,10 @@ const BlogSchema = new mongoose.Schema({
     userId:{
         type: 'string',
     },
+    username:{
+        type: 'string',
+        default: 'Anonymous'
+    },
     title:{
         type: 'string',
         required: true,
