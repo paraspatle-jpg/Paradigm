@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+require('dotenv').config();
 
 const authRoutes = require('./routes/auth');
 
@@ -17,7 +18,7 @@ app.use((req, res, next) => {
 app.use("/",authRoutes);
 
 const port = process.env.PORT || 3000;
-const url = "mongodb+srv://averagestudent:rparas1203@cluster0.otxqv.mongodb.net/paradigm?retryWrites=true&w=majority";
+const url = process.env.MONGODB_URL;
 
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => app.listen(port, () => console.log(`Server running on http://localhost:${port}`)))
