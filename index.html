@@ -11,6 +11,8 @@
 </head>
 
 <body>
+    <main data-router-wrapper>
+        <section data-router-view="new-home" class="new-home">
     <div class="nav-container">
         <h1 class="nav-heading">Paradigm</h1>
         <hr>
@@ -24,38 +26,42 @@
             <li><a href="./pages/about-us.html">About Us</a></li>
         </ul>
     </div>
-    <div class="landing-container">
-        <div class="body-container">
-            <h1>Learn To write HTML</h1>
-            <h2>with to the point tutorials</h2>
-            <span><a href="./pages/tutorial-idx.html">Learn</a></span>
-        </div>
-        <img class="img-learn" src="./assets/learn.svg" height="500" width="500" alt="learn.svg">
-        <img class="img-explore" src="./assets/explore.svg" height="500" width="500" alt="learn.svg">
-    </div>
-    <div class="flex-container">
-        <div class="video-container">
-            <div>
-             <h2>Learn through Video lectures</h2>
-             <br>
-             <br>
-             <span><a href="./pages/video-idx.html">Explore</a></span>
+
+        <div class="landing-container">
+            <div class="body-container">
+                <h1>Learn To write HTML</h1>
+                <h2>with to the point tutorials</h2>
+                <span><a href="./pages/tutorial-idx.html">Learn</a></span>
             </div>
-            <img class="img-video" src="./assets/video.svg" height="300" width="300" alt="video"/>
+            <img class="img-learn" src="./assets/learn.svg" height="500" width="500" alt="learn.svg">
+            <img class="img-explore" src="./assets/explore.svg" height="500" width="500" alt="learn.svg">
         </div>
-        <div class="tutorial-container">
-            <img class="img-video" src="./assets/articles.svg" height="300" width="300" alt="video"/>
-            <div>
-                <h2>Learn through Tutorials</h2>
-                <br>
-                <br>
-                <span><a href="./pages/tutorial-idx.html">Explore</a></span>
-               </div>
+        <div class="flex-container">
+            <div class="video-container">
+                <div>
+                    <h2>Learn through Video lectures</h2>
+                    <br>
+                    <br>
+                    <span><a href="./pages/video-idx.html">Explore</a></span>
+                </div>
+                <img class="img-video" src="./assets/video.svg" height="300" width="300" alt="video" />
+            </div>
+            <div class="tutorial-container">
+                <img class="img-video" src="./assets/articles.svg" height="300" width="300" alt="video" />
+                <div>
+                    <h2>Learn through Tutorials</h2>
+                    <br>
+                    <br>
+                    <span><a href="./pages/tutorial-idx.html">Explore</a></span>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+    </main>
     <div class="footer-container">
         <h3>All rights reserved | Paradigm</h3>
     </div>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>

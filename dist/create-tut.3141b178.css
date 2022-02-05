@@ -1,0 +1,66 @@
+.contact-container {
+    margin-top:60px;
+    display:flex;
+    justify-content:space-evenly;
+    font-size: 20px;
+}
+img{
+    margin-top:-20px;
+}
+form{
+    margin-top:20px;
+    width:23vw;
+    height:60vh;
+    padding: 25px;
+    background-color:#333030;
+    color:white;
+    border-radius:5px 25px 5px 25px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.text{
+    width:330px;
+    height:25px;
+    border:1px solid white;
+    font-size:18px;
+    padding: 5px;
+    border-radius:5px 15px 5px 15px;
+}
+textarea{
+    resize:none;
+    border:1px solid white;
+    font-size:18px;
+    padding: 5px;
+    border-radius:5px 15px 5px 15px;
+}
+.submit{
+    margin-top:40px;
+    margin-left:-20px;
+    text-align: center;
+}
+span>a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 10px 40px 10px 40px;
+    border-radius:3px 20px 3px 20px;
+    transition:0.6s;
+}
+span>a:hover{
+    background-color: #ff6584;
+    color: white;
+}
+.footer-container{
+    margin-top:66px;
+    background-color:#333030;
+    color: antiquewhite;
+    height: 60px;
+}
+.footer-container>h3{
+    text-align: center;
+    margin-top:23px;
+    padding-top: 20px;
+}
+
+/*# sourceMappingURL=/create-tut.3141b178.css.map */
