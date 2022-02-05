@@ -4,6 +4,7 @@ const cors = require('cors');
 require('dotenv').config();
 
 const authRoutes = require('./routes/auth');
+const blogRoutes = require('./routes/blog');
 
 const app = express();
 app.use(express.json());
@@ -16,7 +17,7 @@ app.use((req, res, next) => {
 })
 
 app.use("/",authRoutes);
-
+app.use("/",blogRoutes)
 const port = process.env.PORT || 3000;
 const url = process.env.MONGODB_URL;
 
