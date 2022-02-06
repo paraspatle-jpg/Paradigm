@@ -10,6 +10,9 @@ module.exports.addBlog = (req, res) => {
             }
         );
     })
+    .catch(err => {
+        
+    })
 }
 
 module.exports.getBlog = (req, res) => {
@@ -19,6 +22,9 @@ module.exports.getBlog = (req, res) => {
                 blogs:doc,
             }
         )
+    })
+    .catch(err => {
+
     })
 }
 
@@ -31,5 +37,8 @@ module.exports.getUserBlogs = (req, res) => {
                 blogs:doc,
             }
         )
+    })
+    .catch(err=>{
+        
     })
 }

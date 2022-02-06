@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../styles/video-idx.css">
 </head>
 <body>
+    <main data-router-wrapper>
+    <section data-router-view="name">
     <div class="nav-container">
         <h1 class="nav-heading">Paradigm</h1>
         <hr>
@@ -16,8 +18,8 @@
             <li><a href="../index.html">Home</a></li>
             <li><a href="tutorial-idx.html">Tutorials</a></li>
             <li id="current-page"><a href="video-idx.html">Videos</a></li>
-            <li><a href="log-in.html">Login</a></li>
-            <li><a href="sign-up.html">Signup</a></li>
+            <li id="login"><a href="log-in.html">Login</a></li>
+            <li id="signup"><a href="sign-up.html">Signup</a></li>
         </ul>
     </div>
     <div class="box1">
@@ -38,5 +40,8 @@
     <div class="footer-container">
         <h3>All rights reserved | Paradigm</h3>
     </div>
+    </main>
+    </section>
+    <script src="../scripts/index.js"></script>
 </body>
 </html>

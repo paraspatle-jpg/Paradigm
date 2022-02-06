@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../styles/navbar.css">
-    <link rel="stylesheet" href="../styles/tutorial-idx.css">
-</head>
-<body>
-    <div class="nav-container">
-        <h1 class="nav-heading">Paradigm</h1>
-        <hr>
-        <ul>
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/tutorial-idx.css" />
+  </head>
+  <body>
+    <main data-router-wrapper>
+      <section data-router-view="new-home" class="new-home">
+        <div class="nav-container">
+          <h1 class="nav-heading">Paradigm</h1>
+          <hr />
+          <ul>
             <li><a href="../index.html">Home</a></li>
             <li id="current-page"><a href="tutorial-idx.html">Tutorials</a></li>
             <li><a href="video-idx.html">Videos</a></li>
-            <li><a href="log-in.html">Login</a></li>
-            <li><a href="sign-up.html">Signup</a></li>
-        </ul>
-    </div>
-    <div class="tutorial-container">
-        <img src="../assets/no-tut.svg" width="350" height="350" />
-        <h1>There are no tutorials available Yet, pls wait for them or conribute.</h1>
-        <span><a href="create-tut.html">Contribute</a></span>
-    </div>
-    <div class="footer-container">
-        <h3>All rights reserved | Paradigm</h3>
-    </div>
-</body>
+            <li id="login"><a href="log-in.html">Login</a></li>
+            <li id="signup"><a href="sign-up.html">Signup</a></li>
+          </ul>
+        </div>
+        <div class="tutorial-container">
+          <img src="../assets/no-tut.svg" width="350" height="350" />
+          <h1>
+            There are no tutorials available Yet, pls wait for them or
+            conribute.
+          </h1>
+          <span><a href="create-tut.html">Contribute</a></span>
+        </div>
+        <div class="footer-container">
+            <h3>All rights reserved | Paradigm</h3>
+        </div>
+    </section>
+  </main>
+  <script  src="../scripts/index.js"></script>
+  </body>
 </html>

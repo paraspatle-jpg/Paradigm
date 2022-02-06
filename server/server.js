@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 
 app.use("/",authRoutes);
 app.use("/",blogRoutes)
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 const url = process.env.MONGODB_URL;
 
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })

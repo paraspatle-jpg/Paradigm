@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="../styles/navbar.css">
-    <link rel="stylesheet" href="../styles/create-tut.css"/>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="../styles/navbar.css">
+        <link rel="stylesheet" href="../styles/create-tut.css"/>
+        <script src="../scripts/createBlog.js"></script>
 </head>
 <body>
+    <main data-router-wrapper>
+    <section data-router-view="name">
     <div class="nav-container">
         <h1 class="nav-heading">Paradigm</h1>
         <hr>
@@ -16,28 +19,31 @@
             <li><a href="../index.html">Home</a></li>
             <li id="current-page"><a href="tutorial-idx.html">Tutorials</a></li>
             <li><a href="video-idx.html">Videos</a></li>
-            <li><a href="log-in.html">Login</a></li>
-            <li><a href="sign-up.html">Signup</a></li>
+            <li id="login"><a href="log-in.html">Login</a></li>
+            <li id ="signup"><a href="sign-up.html">Signup</a></li>
         </ul>
     </div>
     <div class="contact-container">
 		<form>
 			<label for="email">Enter the topic of your blog :</label>
-			<input class="text" type="name" /><br>
+			<input id="topic" class="text" type="name" /><br>
             <label for="query-type">Select Difficulty of the topic :</label>
-            <span><input type="radio"> Easy</span>
-            <span><input type="radio"> Intermediate</span>
-            <span><input type="radio"> Difficult</span><br>
+            <span><input id="difficulty" value="Easy" type="radio"> Easy</span>
+            <span><input id="difficulty" value="Intermediate" type="radio"> Intermediate</span>
+            <span><input id="difficulty" value="Hard"  type="radio"> Hard</span><br>
 			<label for="query">Enter the title of blog :</label>
-            <input class="text" type="name" /><br>
+            <input id="title" class="text" type="name" /><br>
 			<label for="query">Enter the content :</label>
-			<textarea rows="4" cols="50"></textarea><br>
-			<span class="submit"><a href="contribution-suc.html">Submit</a></span>
+			<textarea id="content" rows="4" cols="50"></textarea><br>
+			<span class="submit"><a id="submitbtn">Submit</a></span>
 		</form>
 		<img src="../assets/sign-in.svg" height="500" width="500" alt="login.svg">
 	</div>
 	<div class="footer-container">
 		<h3>All rights reserved | Paradigm</h3>
 	</div>
+    </main>
+    </section>
+    <script src="../scripts/index.js"></script>
 </body>
 </html>

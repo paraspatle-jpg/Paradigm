@@ -1,3 +1,4 @@
+!window.localStorage.getItem('user')?console.log('login'):location.replace('http://127.0.0.1:5500/index.html')
 const details = {
     email: "",
     password: ""
@@ -15,7 +16,7 @@ const handleChangePassword = (e) => {
 }
 const handleLogin = () => {
     if (details.email && details.password) {
-        fetch("http://localhost:3000/login", {
+        fetch("http://localhost:5000/login", {
             method: "POST",
             mode: "cors",
             headers: {
@@ -30,6 +31,8 @@ const handleLogin = () => {
                     return Promise.reject(error);
                 }
                 console.log(JSON.stringify(user));
+                window.localStorage.setItem('user',JSON.stringify(user));
+                location.replace('http://127.0.0.1:5500/index.html')
             })
             .catch(error => {
                 console.log(JSON.stringify(error));
