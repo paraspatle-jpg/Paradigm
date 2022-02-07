@@ -1,4 +1,4 @@
-!window.localStorage.getItem('user')?console.log('login'):location.replace('http://127.0.0.1:5500/index.html')
+!window.localStorage.getItem('user')?console.log('login'):location.replace('../index.html')
 const details = {
     email: "",
     password: ""

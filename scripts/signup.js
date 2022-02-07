@@ -1,4 +1,4 @@
-
+!window.localStorage.getItem('user')?console.log('login'):location.replace('../index.html')
 
 const details = {
   email: "",
