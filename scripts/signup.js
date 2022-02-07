@@ -44,7 +44,7 @@ const handleSignUp = () => {
         }
         console.log(JSON.stringify(user));
         window.localStorage.setItem('user',JSON.stringify(user));
-        location.replace('http://127.0.0.1:5500/index.html')
+        location.replace('../index.html')
       })
       .catch((err) => {
         console.log(JSON.stringify(err));
