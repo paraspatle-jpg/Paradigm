@@ -1,8 +1,11 @@
+.nav-container{
+    margin-left: -14.5px;
+}
 .video-container{
     text-align: left;
     height: 60vh;
     padding-top: 30px;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 20px;
     margin-left: -100px;
 }
