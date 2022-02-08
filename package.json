@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "A dummy tutorial website made for IT workshop 2 assignment",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp"
   },
   "repository": {
     "type": "git",
@@ -16,8 +18,9 @@
     "url": "https://github.com/paraspatle-jpg/Paradigm/issues"
   },
   "homepage": "https://github.com/paraspatle-jpg/Paradigm#readme",
-  "dependencies": {
-    "@dogstudio/highway": "^2.2.1",
-    "gsap": "^3.9.1"
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.7"
   }
 }
