@@ -1,0 +1,36 @@
+.nav-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(32, 30, 30);
+    color: white;
+    position: sticky;
+    width: 100%;
+    .nav-heading{
+        font-size:28px;
+        padding:5px;
+        padding-right: 8px;
+    }
+    ul{
+        margin-top:8px;
+        padding: 5px;
+        background-color: rgb(87, 85, 85);
+        border-radius:5px 5px 0px 0px;
+        display: flex;
+        list-style: none;
+        li{
+            a{
+                font-size:17px;
+                padding:15px;
+                color: rgb(172, 166, 166);
+            }
+            
+        }
+        #current-page{
+            a{
+                color:white;
+            }
+        }
+    }
+}

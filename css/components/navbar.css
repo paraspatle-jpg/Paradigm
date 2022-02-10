@@ -1,0 +1,31 @@
+.nav-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #201e1e;
+  color: white;
+  position: sticky;
+  width: 100%;
+}
+.nav-container .nav-heading {
+  font-size: 28px;
+  padding: 5px;
+  padding-right: 8px;
+}
+.nav-container ul {
+  margin-top: 8px;
+  padding: 5px;
+  background-color: #575555;
+  border-radius: 5px 5px 0px 0px;
+  display: flex;
+  list-style: none;
+}
+.nav-container ul li a {
+  font-size: 17px;
+  padding: 15px;
+  color: #aca6a6;
+}
+.nav-container ul #current-page a {
+  color: white;
+}

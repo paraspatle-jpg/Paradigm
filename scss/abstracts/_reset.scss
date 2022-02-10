@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html, body {
+      background-color: rgb(87, 85, 85);
+      font-family: 'Open Sans', sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }  
+  .main{
+      margin-top: 20px;
+  }

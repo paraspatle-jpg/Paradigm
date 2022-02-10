@@ -6,14 +6,14 @@ const sass = gulpSass(dartSass);
 const {src,dest,watch,series} = pkg;
 
 const buildStyles = () => {
-    return src('./sass/**/*.scss')
+    return src('./scss/**/*.scss')
       .pipe(sass().on('error', sass.logError))
       .pipe(dest('./css'));
   };
   
 
 const watcher = () => {
-    watch(['./sass/**/*.scss'], buildStyles);
+    watch(['./scss/**/*.scss'], buildStyles);
   };
 
   export default series(buildStyles,watcher)
