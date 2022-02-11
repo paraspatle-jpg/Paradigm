@@ -1,22 +1,73 @@
-.tutorial-container{
-    text-align: center;
-    height: 73vh;
+.wrapper{
+    min-height:40vw;    
+    margin:auto;
+    margin-top:40px;
 }
-.tutorial-container>h1{
-    margin-bottom:20px;
+.table-index{
+    display: flex;
+    justify-content: space-evenly;
 }
-span>a{
-    text-decoration: none;
+.btn-wrapper{
+    font-size:20px;
+    padding:10px;
+}
+.all-tutorial,.my-tutorial {
+    border-radius: 5px 15px 0px 0px;
+    padding:12px;
+    padding-left: 99.5px;
+    padding-right: 99.5px;
+    transition: all 0.3s;
+}
+.all-tutorial:hover,.my-tutorial:hover{
+    background-color:#333030;
+    color:white;
+}
+.active{
+    background-color:#333030;
+    color:white;
+}
+.my-tutorial{
+    border-radius: 15px 5px 0px 0px;
+}
+.tutorial-index{
+    background-color:#333030;
+    margin: auto;
+    min-height: 80vh;
+    height:auto;
+    width: 60%;
+    padding-top: 40px;
+    border-radius: 0px 0px 15px 15px;
+    padding-bottom: 10px;
+}
+
+
+.tutorial-wrapper {
+    margin: auto;
+    width: 80%;
+    border: 1px solid antiquewhite;
+    height: 150px;
+    border-radius: 5px 15px 5px 15px;
+    color:antiquewhite;
     font-size: 20px;
-    background-color: #333030;
-    color: white;
-    padding: 15px 40px 15px 40px;
-    border-radius:3px 20px 3px 20px;
-    transition:0.6s;
+    padding:15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-span>a:hover{
-    background-color: #ff6584;
-    color: white;
+.tutorial-content-wrapper{
+    width: 50%;
+    margin: auto;
+}
+.difficulty , .topics {
+    font-size:16px;
+    color: rgb(119, 117, 114);
+    margin-bottom: 20px;
+}
+.submit{
+    text-align: center;
+    padding: 10px;
+    font-size:16px;
+    background-color:antiquewhite;
+    color: black;
 }
 .footer-container{
     margin-top:66px;

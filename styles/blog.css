@@ -1,0 +1,26 @@
+.wrapper{
+    min-height:40vw;    
+    margin:auto;
+    margin-top:40px;
+}
+.tutorial-index{
+    background-color:#333030;
+    margin: auto;
+    min-height: 80vh;
+    height:auto;
+    width: 60%;
+    padding-top: 40px;
+    border-radius: 15px 15px 15px 15px;
+    padding-bottom: 10px;
+}
+.footer-container{
+    margin-top:66px;
+    background-color:#333030;
+    color: antiquewhite;
+    height: 60px;
+}
+.footer-container>h3{
+    text-align: center;
+    margin-top:23px;
+    padding-top: 20px;
+}
