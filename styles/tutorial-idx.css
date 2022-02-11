@@ -12,6 +12,7 @@
     padding:10px;
 }
 .all-tutorial,.my-tutorial {
+    cursor: pointer;
     border-radius: 5px 15px 0px 0px;
     padding:12px;
     padding-left: 99.5px;
@@ -64,10 +65,26 @@
 }
 .submit{
     text-align: center;
+    cursor: pointer;
     padding: 10px;
     font-size:16px;
     background-color:antiquewhite;
     color: black;
+}
+.addbtn-wrapper{
+    padding-top: 10px;
+}
+.add-tut{
+    padding: 10px;
+    text-align: center;
+    font-size:20px;
+    cursor: pointer;
+    border-radius: 5px 15px 5px 15px;
+    width: 30%;
+    margin: auto;
+    background-color:#333030;
+    color: white;
+
 }
 .footer-container{
     margin-top:66px;
