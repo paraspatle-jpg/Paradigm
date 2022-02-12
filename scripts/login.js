@@ -16,6 +16,8 @@ const handleChangePassword = (e) => {
 }
 const handleLogin = () => {
     if (details.email && details.password) {
+        document.getElementById("warning").innerText = "";
+        document.getElementById("submitbtn").innerHTML = "Logging in...";
         fetch("http://localhost:5000/login", {
             method: "POST",
             mode: "cors",
@@ -35,6 +37,8 @@ const handleLogin = () => {
                 location.replace('../index.html')
             })
             .catch(error => {
+                document.getElementById("warning").innerText = "Some Error occured, Please Try again";
+                document.getElementById("submitbtn").innerHTML = "Login";
                 console.log(JSON.stringify(error));
             })
     }

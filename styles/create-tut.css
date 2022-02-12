@@ -38,6 +38,7 @@ textarea{
     margin-top:40px;
     margin-left:-20px;
     text-align: center;
+    cursor:pointer;
 }
 span>a{
     text-decoration: none;

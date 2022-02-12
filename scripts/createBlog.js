@@ -24,7 +24,8 @@ const handleContent = (e) =>{
     console.log(blog);
 }
 const handleSubmit = () =>{
-    fetch("http://localhost:3000/blog",{
+    document.getElementById("submitbtn").innerHTML = "Submitting...";
+    fetch("http://localhost:5000/blog",{
         method: 'POST',
         mode: 'cors',
         headers: {
@@ -38,15 +39,16 @@ const handleSubmit = () =>{
             const error = (user && user.message) || response.status;
             return Promise.reject(error);
         }
-        console.log(JSON.stringify(blog));
+        window.location.replace('./tutorial-idx.html')
         
     })
     .catch(error => {
+        document.getElementById("submitbtn").innerHTML = "Try Again";
         console.log(JSON.stringify(error));
     })
 }
 
-document.getElementById("title").addEventListener("change",handleTitle);
+document.querySelector("#title").addEventListener("change",handleTitle);
 document.getElementById("topic").addEventListener("change",handleTopic);
 document.getElementById("content").addEventListener("change",handleContent);
 document.getElementById("difficulty").addEventListener("click",handleChange);

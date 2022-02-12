@@ -1,17 +1,31 @@
 .wrapper{
     min-height:40vw;    
     margin:auto;
-    margin-top:40px;
+    margin-top:80px;
 }
 .tutorial-index{
     background-color:#333030;
     margin: auto;
-    min-height: 80vh;
+    min-height: 70vh;
     height:auto;
-    width: 60%;
-    padding-top: 40px;
+    width: 45%;
+    padding: 30px;
     border-radius: 15px 15px 15px 15px;
     padding-bottom: 10px;
+    color: white;
+}
+.tutorial-index>.title{
+    font-size: 26px;
+    font-weight: normal;
+}
+.author{
+    
+    color: rgb(141, 140, 140);
+}
+.content{
+    word-spacing: 2px;
+    color: rgb(231, 228, 228);
+    font-size: 18px;
 }
 .footer-container{
     margin-top:66px;

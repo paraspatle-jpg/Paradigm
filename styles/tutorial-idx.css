@@ -69,6 +69,7 @@
     padding: 10px;
     font-size:16px;
     background-color:antiquewhite;
+    border-radius: 5px 15px 5px 15px;
     color: black;
 }
 .addbtn-wrapper{
