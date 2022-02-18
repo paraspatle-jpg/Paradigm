@@ -12,7 +12,7 @@ module.exports.login = (req, res) => {
         .status(404)
         .json({ message: "User not found with these credentials" });
     if (await bcrypt.compare(password, user.password)) {
-      const token = await jwt.sign({_id:user._id},"itsasecretbutilovetanmayee")
+      const token = await jwt.sign({_id:user._id},"itsasecretbutilovecats")
       console.log(token);
       res.status(200).send({user:{
         userId: user._id,
@@ -53,3 +53,17 @@ module.exports.signup = (req, res) => {
     });
   });
 };
+
+
+module.exports.getAllUsers = async (req, res) => {
+    User.find({}).then((users)=>{
+        res.status(200).send(users)
+    })
+}
+
+module.exports.deleteUser = async (req, res) => {
+    const userId = req.params.userId;
+    User.findOneAndDelete({_id:userId}).then(()=>{
+        res.status(200).send({message:"user deleted successfully"});
+    })
+}
