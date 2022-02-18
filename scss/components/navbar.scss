@@ -15,7 +15,7 @@
     ul{
         margin-top:8px;
         padding: 5px;
-        background-color: rgb(87, 85, 85);
+        background-color: rgb(90, 84, 84);
         border-radius:5px 5px 0px 0px;
         display: flex;
         list-style: none;
@@ -24,6 +24,10 @@
                 font-size:17px;
                 padding:15px;
                 color: rgb(172, 166, 166);
+                transition: all 0.4s;
+            }
+            a:hover{
+                color: rgb(255, 255, 255);
             }
             
         }
@@ -31,6 +35,68 @@
             a{
                 color:white;
             }
+        }
+    }
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+
+@media screen and (max-width: 768px){
+    #nav-ul{
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        flex-direction: column;
+        a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+          }
+          a:hover{
+            color: rgb(255, 255, 255);
         }
     }
 }

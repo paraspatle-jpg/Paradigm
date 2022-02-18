@@ -14,8 +14,9 @@ const handleChangePassword = (e) => {
     details.password = e.target.value;
     console.log(details);
 }
-const handleLogin = () => {
+const handleLogin = (e) => {
     if (details.email && details.password) {
+        e.target.innerHTML = "Submitting..."
         fetch("http://localhost:5000/login", {
             method: "POST",
             mode: "cors",
@@ -27,6 +28,7 @@ const handleLogin = () => {
             .then(async response => {
                 const user = await response.json();
                 if (!response.ok) {
+                    e.target.innerHTML = "Submit"
                     const error = (user && user.message) || response.status;
                     return Promise.reject(error);
                 }

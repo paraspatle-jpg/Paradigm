@@ -1,75 +1,55 @@
-const User = require('../models/User');
-const nodemailer = require("nodemailer");
-require('dotenv').config();
+const User = require("../models/User");
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+require("dotenv").config();
 
-let mailTransporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-        user: process.env.EMAIL_ADDRESS,
-        pass: process.env.EMAIL_PASS
-    }
-});
 
 module.exports.login = (req, res) => {
-    const { email, password } = req.body;
-    User.findOne({ email, password })
-        .then( (user) => {
-            if (!user) return res.status(404).json({ message: "User not found with these credentials" })
-              
-            let mailDetails = {
-                from: 'paradigm.tutorial234@gmail.com',
-                to: email,
-                subject: 'Login Successful',
-                text: 'Welcome to paradigm'
-            };
-              
-            mailTransporter.sendMail(mailDetails, (err, data) => {
-                if(err) {
-                    console.log(err);
-                } else {
-                    console.log('Email sent successfully');
-                }
-            });
-
-            res.status(200).send({
-                userId: user._id,
-                username: user.username,
-                email: user.email,
-            })
-        })
-}
+  const { email, password } = req.body;
+  User.findOne({ email }).then(async (user) => {
+    if (!user)
+      return res
+        .status(404)
+        .json({ message: "User not found with these credentials" });
+    if (await bcrypt.compare(password, user.password)) {
+      const token = await jwt.sign({_id:user._id},"itsasecretbutilovetanmayee")
+      console.log(token);
+      res.status(200).send({user:{
+        userId: user._id,
+        username: user.username,
+        email: user.email,
+      },
+      token: token
+    });
+    }
+    else{
+        return res
+        .status(404)
+        .json({ message: "User not found with these credentials" });
+    }
+  });
+};
 
 module.exports.signup = (req, res) => {
-    const { username, email, password } = req.body;
-    User.findOne({ email })
-        .then(async (user) => {
-            if (user) return res.status(400).json({ message: "User already exists with this mail" });
-            const newUser = new User({ username, email, password });
+  const { username, email, password } = req.body;
+  User.findOne({ email }).then((user) => {
+    if (user)
+      return res
+        .status(400)
+        .json({ message: "User already exists with this mail" });
 
-            let mailDetails = {
-                from: 'paradigm.tutorial234@gmail.com',
-                to: email,
-                subject: 'Login Successful',
-                text: 'Welcome to paradigm'
-            };
-              
-            mailTransporter.sendMail(mailDetails, (err, data) => {
-                if(err) {
-                    console.log(err);
-                } else {
-                    console.log('Email sent successfully');
-                }
-            });
+    const salt = bcrypt.genSaltSync(8);
+    const hashPassword = bcrypt.hashSync(password, salt);
 
-            
-            newUser.save()
-                .then((user) => {
-                    res.status(200).send({
-                        userId: user._id,
-                        username: user.username,
-                        email: user.email
-                    })
-
-                })
-        })
-}
+    const newUser = new User({ username, email, password: hashPassword });
+    newUser.save().then(async (user) => {
+      token = await jwt.sign({_id:user._id},"itsasecretbutilovetanmayee")
+      console.log(token);
+      res.status(200).send({
+        userId: user._id,
+        username: user.username,
+        email: user.email,
+      });
+    });
+  });
+};
