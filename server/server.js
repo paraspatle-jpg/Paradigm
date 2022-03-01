@@ -17,7 +17,7 @@ app.use((req, res, next) => {
 })
 
 app.use("/",authRoutes);
-app.use("/",blogRoutes)
+app.use("/",blogRoutes);
 const port = process.env.PORT || 5000;
 const url = process.env.MONGODB_URL;
 

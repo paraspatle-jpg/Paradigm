@@ -42,3 +42,7 @@ module.exports.getUserBlogs = (req, res) => {
         
     })
 }
+
+module.exports.deleteBlog = (req, res) => {
+    const blogId = req.params.blogId;
+}
