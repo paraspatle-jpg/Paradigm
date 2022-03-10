@@ -29,13 +29,7 @@ module.exports.signup = async (req, res) => {
 
 module.exports.getAllUsers = async (req, res) => {
   User.find({}).then((users) => {
-    res.status(200).send(
-      users.map((user) => ({
-        userId: user._id,
-        username: user.username,
-        email: user.email,
-      }))
-    );
+    res.status(200).send(users.map((user) => ({ user })));
   });
 };
 
